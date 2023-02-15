@@ -50,10 +50,11 @@ export default function Products() {
         return (
             <>
                 {
-                    <Box sx={{display:'flex',}}>
+                    <Box sx={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
                         <h1>Product List</h1>
                         <div style={{float:'right'}}>
-                            <Button variant="contained" startIcon={<RemoveRedEyeIcon />}>Create Product</Button>
+                            <Button variant="contained" startIcon={<BorderColorIcon />}>Add Product</Button> 
+                            <Button variant="contained" sx={{ml:1}} startIcon={<RemoveRedEyeIcon />}>Filter</Button>
                         </div>
                         </Box>
                 }

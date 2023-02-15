@@ -245,6 +245,7 @@ const Header = () => {
         {/* <Container maxWidth="xl"> */}
         <Toolbar disableGutters variant="dense">
           <Typography variant="h6" noWrap component="div" sx={toolBar}>
+            <img src={logo} alt="sunedison_one" style={headerLogo} />
           </Typography>
           <IconButton
             color="inherit"
@@ -259,34 +260,19 @@ const Header = () => {
             <MenuIcon />
           </IconButton>
           <Box sx={menuOptionsStyleMobile}>
-           
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
 
           </Box>
           
-          <Box sx={menuOptionsStyleDesktop}>
-
-          </Box>
-
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
-         
-          </Box>
-
-          <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "none" } }}>
-            <Tooltip title="Manager">
-              <List sx={{ paddingTop: 0, paddingBottom: 0 }}>
-                <ListItem disablePadding>
-                  <ListItemButton onClick={handleOpenUserMenu}>
-                    <ListItemIcon sx={{ minWidth: 35 }}>
-                      <AccountCircleIcon sx={{ color: "black" }} />
-                    </ListItemIcon>
-
-                    <ExpandMore />
-                  </ListItemButton>
-                </ListItem>
-              </List>
-            </Tooltip>
-         
-          </Box>
         </Toolbar>
         {/* </Container> */}
       </AppBar>
@@ -301,7 +287,7 @@ const Header = () => {
             <MenuIcon sx={{ fill: "#e3b707" }} />
           </IconButton> : <img
             style={{ height: '50%', width: '50%', my: 2 }}
-            alt="logo favicon"
+            alt="logo full"
 
             src="https://www.creativebees.in/wp-content/uploads/2022/11/favicon-150x150.png" />}
         </DrawerHeader>
