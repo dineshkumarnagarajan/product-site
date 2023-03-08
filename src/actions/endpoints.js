@@ -1,0 +1,1 @@
+export let baseUrl = "http://demo.creativebees.in/test_api/product/";

@@ -1,0 +1,16 @@
+*{
+  font-family: 'Noto Sans' !important;
+}
+.link{
+	text-decoration: none
+}
+.chart{
+  max-width: 600px;
+  height: 370px;
+  margin: 0px auto;
+}
+.chartFullScreen{
+  width: 100%;
+  height:calc(98vh - 165px);
+  margin: 0px auto;
+}
